@@ -14,6 +14,13 @@ ___
 #####	Função Linhas
 	Lista todas as linhas dos arquivos e compara linha por linha.
 	
+#####	Função Diretorios
+	Compara arquivos em pasta diferente.
+	Retorna três listas contendo: 
+*	Arquivos correspondentes 
+*	Arquivos incompatíveis 
+*	Erros relacionados aos arquivos que não puderam ser comparados
+	
 ##### Função pathArquivos
 	Solicita por input os dois caminhos completos dos arquivos no computador, e retorna para ser utilizado para abrir o arquivo.
 	
