@@ -15,6 +15,6 @@ from sistema import *
 if __name__ == '__main__':
     print('\033[32mAutomatizar TI v1.0\033[m'.center(42))
     print(linha())
-    menu(['Comparar Arquivo Completo','Comparar Linhas do Arquivo','Sair'])
+    menu(['Comparar Arquivo Completo','Comparar Linhas do Arquivo', 'Comparar em diretorio diferente','Sair'])
     print(final())
 

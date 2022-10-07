@@ -46,3 +46,19 @@ def Linhas():
         
     f1.close()
     f2.close()
+
+def Diretorios():
+    arq1, arq2 = pathArquivos()
+    d1 = arq1
+    d2 = arq2
+    files = ['intro.txt']
+    match, mismatch, errors = filecmp.cmpfiles(d1, d2, files)
+    print('Shallow comparison')
+    print("Match:", match)
+    print("Mismatch:", mismatch)
+    print("Errors:", errors)
+    match, mismatch, errors = filecmp.cmpfiles(d1, d2, files, shallow=False)
+    print('Deep comparison')
+    print("Match:", match)
+    print("Mismatch:", mismatch)
+    print("Errors:", errors)

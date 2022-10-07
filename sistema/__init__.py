@@ -44,7 +44,7 @@ def validaInt(entrada, itensMenu):
     try:
         entrada.isdigit()
         entrada = int(entrada)
-        if entrada < 0 or entrada > itensMenu:
+        if entrada < 1 or entrada > itensMenu:
             print(f'{entrada} - Somente Opções do Menu!')
     except ValueError:
         print(f'{entrada} não é um valor valido!')
