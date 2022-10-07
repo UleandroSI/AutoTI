@@ -1,4 +1,14 @@
-import filecmp 
+# coding: utf-8
+__author__ = "UleandroSI"
+__copyright__ = "Copyright 2007, The Cogent Project"
+__credits__ = ["Leandro Barbosa"]
+__license__ = "GNU General Public License v3.0"
+__version__ = "1.0"
+__maintainer__ = "Leandro Barbosa"
+__email__ = "uleandrosp7@gmail.com"
+__status__ = "Development"
+
+import filecmp
 
 def pathArquivos():
     arquivo1 = input("Digite o endereço completo do arquivo 1\033[31m'Inclusive extensão'\033[m:\n")

@@ -1,7 +1,13 @@
-# This is a sample Python script.
+# coding: utf-8
+__author__ = "UleandroSI"
+__copyright__ = "Copyright 2007, The Cogent Project"
+__credits__ = ["Leandro Barbosa"]
+__license__ = "GNU General Public License v3.0"
+__version__ = "1.0"
+__maintainer__ = "Leandro Barbosa"
+__email__ = "uleandrosp7@gmail.com"
+__status__ = "Development"
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from sistema import *
 
 
@@ -12,4 +18,3 @@ if __name__ == '__main__':
     menu(['Comparar Arquivo Completo','Comparar Linhas do Arquivo','Sair'])
     print(final())
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
