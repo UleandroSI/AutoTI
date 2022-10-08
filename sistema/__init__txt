@@ -10,7 +10,7 @@ __status__ = "Development"
 
 
 import time
-from sistema.comparaArquivo import *
+from sistema.ComparaArquivo import *
 
 def menu(lista):
     itensMenu = len(lista)

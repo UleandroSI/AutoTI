@@ -8,13 +8,9 @@ __maintainer__ = "Leandro Barbosa"
 __email__ = "uleandrosp7@gmail.com"
 __status__ = "Development"
 
-from sistema import *
+from sistema.janelas import Janela_inicial
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print('\033[32mAutomatizar TI v1.0\033[m'.center(42))
-    print(linha())
-    menu(['Comparar Arquivo Completo','Comparar Linhas do Arquivo', 'Comparar em diretorio diferente','Sair'])
-    print(final())
-
+    Janela_inicial()

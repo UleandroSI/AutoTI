@@ -9,25 +9,19 @@ __email__ = "uleandrosp7@gmail.com"
 __status__ = "Development"
 
 import filecmp
+from sistema import janelas
 
-def pathArquivos():
-    arquivo1 = input("Digite o endereço completo do arquivo 1\033[31m'Inclusive extensão'\033[m:\n")
-    arquivo2 = input("Digite o endereço completo do arquivo 2\033[31m'Inclusive extensão'\033[m:\n")
-    return arquivo1, arquivo2
-
-
-def Completo():
-    f1, f2 = pathArquivos()
-    #f1 = "C:/Users/lbarbosa/Documents/Git/Untitled.ipynb"
-    #f2 = "C:/Users/lbarbosa/Documents/Git/Untitled1.ipynb"
+def CompararCompleto(f1, f2):
     result = filecmp.cmp(f1, f2)
-    print(result)
+    #print(result)
+    janelas.Janela_exibiçao(result)
     result = filecmp.cmp(f1, f2, shallow=False)
     print(result)
+    #return result
 
 
-def Linhas():
-    arq1, arq2 = pathArquivos()
+def CompararLinhas(f1, f2):
+    arq1, arq2 = f1, f2
     f1 = open(arq1, "r")
     f2 = open(arq2, "r")
     
@@ -47,8 +41,8 @@ def Linhas():
     f1.close()
     f2.close()
 
-def Diretorios():
-    arq1, arq2 = pathArquivos()
+def CompararDiretorios(f1, f2):
+    arq1, arq2 = f1, f2
     d1 = arq1
     d2 = arq2
     files = ['intro.txt']
